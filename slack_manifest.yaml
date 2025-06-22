@@ -1,0 +1,38 @@
+display_information:
+  name: Doc Copilot
+  description: Ask questions about your documentation directly from Slack.
+  background_color: "#2c3e50"
+features:
+  bot_user:
+    display_name: Doc Copilot
+    always_online: true
+  slash_commands:
+    - command: /ask
+      description: Ask a question about your documents.
+      usage_hint: "[your question]"
+      should_escape: false
+    - command: /docs-status
+      description: Show the status of the documentation copilot.
+      should_escape: false
+    - command: /docs-help
+      description: Show help information for the Documentation Copilot bot.
+      should_escape: false
+oauth_config:
+  scopes:
+    bot:
+      - commands
+      - chat:write
+      - app_mentions:read
+      - im:history
+      - im:read
+      - users:read
+settings:
+  event_subscriptions:
+    bot_events:
+      - app_mention
+      - message.im
+  interactivity:
+    is_enabled: true
+  org_deploy_enabled: false
+  socket_mode_enabled: true
+  token_rotation_enabled: false 

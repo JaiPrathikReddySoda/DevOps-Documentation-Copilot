@@ -1,0 +1,13 @@
+Sample Text Document
+
+This is a sample text document that demonstrates the text processing capabilities of the Documentation Copilot.
+
+The system can handle various file formats including:
+- Markdown files
+- PDF documents
+- Word documents
+- Plain text files
+- Web URLs
+- GitHub files
+
+Each document type is processed appropriately to extract meaningful content for the vector database.
